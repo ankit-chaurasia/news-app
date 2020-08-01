@@ -1,7 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const configs = require('./config.json');
 const NewsAPI = require("newsapi");
-const newsapi = new NewsAPI("");
+const newsapi = new NewsAPI(configs.NEWS_API_KEY);
 const { headerKeys, headerValues } = require("./constants/res-header");
 
 const app = express();
