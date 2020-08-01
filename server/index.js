@@ -18,7 +18,7 @@ app.get("/api/news", (req, res) => {
     .then((response) => {
       console.log(response);
       res.setHeader(headerKeys.contentType, headerValues[headerKeys.contentType].json);
-      res.send(JSON.stringify({ response, country }));
+      res.send(JSON.stringify(response));
     });
 });
 
