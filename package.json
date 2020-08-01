@@ -1,0 +1,24 @@
+{
+  "name": "news-app",
+  "version": "1.0.0",
+  "description": "News app",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm start",
+    "start": "concurrently - kill-others \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankit-chaurasia/news-app.git"
+  },
+  "author": "Ankit Chaurasia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankit-chaurasia/news-app/issues"
+  },
+  "homepage": "https://github.com/ankit-chaurasia/news-app#readme",
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
